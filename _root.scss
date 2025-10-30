@@ -1,5 +1,6 @@
 :root,
 [data-bs-theme="light"] {
+  
   // Note: Custom variable values only support SassScript inside `#{}`.
 
   // Colors
@@ -9,6 +10,7 @@
   @each $color, $value in $colors {
     --#{$prefix}#{$color}: #{$value};
   }
+  
 
   @each $color, $value in $grays {
     --#{$prefix}gray-#{$color}: #{$value};
